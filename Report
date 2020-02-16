@@ -1,0 +1,13 @@
+ETL Project – Group 4: Joting Wong, Laura Hawkins, Hayden Buss, Gregory Pevey
+1.      Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
+·        The Happiness data is from Kaggle and the GDP data is from the IMF website
+·        Both are in CSV format
+2.      Transform: what data cleaning or transformation was required.
+·        Dropped columns to only the ones we need on both datasets
+·        Renamed the columns
+·        Rounded the decimals down to 2
+·        On the govt_data table, we had to do a DropNA to remove the rows missing data (only 3 rows dropped)
+3.      Load: the final database, tables/collections, and why this was chosen.
+·        Used PostgreSQL as a relational database
+·        Created two tables: happy_data and govt_data
+·        Joined the two tables at the end to have one single dataset
